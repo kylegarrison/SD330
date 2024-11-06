@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fridge Display</title>
+    <link rel="stylesheet" href="fridge.css">
+</head>
+<body>
+    
+    <div id="fridge-display">
+        <div id="top-bar">
+            <button id="power-button">ON / OFF</button>
+            <div id="clock">Loading...</div>
+        </div>
+        <div id="main-content">
+            <h2 id="display-title">Viewing Netflix</h2>
+            <div id="nav-buttons">
+                <button onclick="showDisplay('temperature')">Temperature/Weather</button>
+                <button onclick="showDisplay('shelf-view')">Shelf View</button>
+                
+                
+                <button onclick="showDisplay('netflix')">Netflix</button>
+                <button onclick="showDisplay('browser')">Browser</button>
+                
+                <button onclick="showDisplay('settings')">Settings</button>
+                <button onclick="showDisplay('shopping')">Shopping List</button>
+            </div>
+            <div id="content"></div>
+        </div>
+    </div>
+   
+    <script src="fridge.js"></script>
+
+
+
+</body>
+
+
+
+
+
+</html>
