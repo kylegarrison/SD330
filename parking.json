@@ -1,0 +1,145 @@
+{
+    "parkingLots": [
+      {
+        "name": "Foy Lot",
+        "mapFilename": "mapFoy.jpg",
+        "totalSpaces": 100,
+        "comments": "Close to academic buildings.",
+        "location": "North Campus",
+        "hours": "7 AM - 10 PM",
+        "security": "Surveillance cameras",
+        "spaces": [
+          {
+            "spaceId": 1,
+            "type": "Student",
+            "status": "Available",
+            "filledDateTime": null,
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 2,
+            "type": "Faculty/Staff",
+            "status": "Reserved",
+            "filledDateTime": null,
+            "reservedDateTime": "2024-11-23T08:00:00"
+          },
+          {
+            "spaceId": 3,
+            "type": "Handicap",
+            "status": "Available",
+            "filledDateTime": null,
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 4,
+            "type": "Student",
+            "status": "Filled",
+            "filledDateTime": "2024-11-23T09:00:00",
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 5,
+            "type": "Student",
+            "status": "Available",
+            "filledDateTime": null,
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 6,
+            "type": "Faculty/Staff",
+            "status": "Filled",
+            "filledDateTime": "2024-11-23T08:30:00",
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 7,
+            "type": "Student",
+            "status": "Reserved",
+            "filledDateTime": null,
+            "reservedDateTime": "2024-11-23T10:00:00"
+          },
+          {
+            "spaceId": 8,
+            "type": "Handicap",
+            "status": "Filled",
+            "filledDateTime": "2024-11-23T08:45:00",
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 9,
+            "type": "Student",
+            "status": "Available",
+            "filledDateTime": null,
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 10,
+            "type": "Student",
+            "status": "Filled",
+            "filledDateTime": "2024-11-23T09:15:00",
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 11,
+            "type": "Faculty/Staff",
+            "status": "Available",
+            "filledDateTime": null,
+            "reservedDateTime": null
+          },
+          {
+            "spaceId": 12,
+            "type": "Student",
+            "status": "Available",
+            "filledDateTime": null,
+            "reservedDateTime": null
+          }
+        ]
+      },
+      {
+        "name": "Dyson Lot",
+        "mapFilename": "mapDysonLot.jpg",
+        "totalSpaces": 100,
+        "comments": "Staff parking.",
+        "location": "Middle Campus",
+        "hours": "8am-10pm",
+        "security": "Security guards"
+      },
+      {
+        "name": "Lower Fulton Lot",
+        "mapFilename": "mapLFLot.jpg",
+        "totalSpaces": 75,
+        "comments": "Student parking",
+        "location": "Next to tennis courts",
+        "hours": "24 Hours",
+        "security": "Emergency phones"
+      },
+      {
+        "name": "Ward Lot",
+        "mapFilename": "mapWardLot.jpg",
+        "totalSpaces": 50,
+        "comments": "Student parking",
+        "location": "Gartland buildings",
+        "hours": "24 Hours",
+        "security": "Security guards"
+      },
+      {
+        "name": "McCann Lot",
+        "mapFilename": "mapMcCannLot.jpg",
+        "totalSpaces": 300,
+        "comments": "Large parking for sporting events",
+        "location": "McCann",
+        "hours": "8am - 12am",
+        "security": "Security cameras/guards"
+      },
+      {
+        "name": "Donelly Lot",
+        "mapFilename": "mapDonellyLot.jpg",
+        "totalSpaces": 150,
+        "comments": "Staff parking",
+        "location": "Donelly",
+        "hours": "24 hours",
+        "security": "security guards"
+      }
+    ]
+  }
+  
