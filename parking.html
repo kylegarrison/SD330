@@ -6,29 +6,100 @@
     <title>Parking Lot App</title>
     <link rel="stylesheet" href="parking.css">
     <style>
+       
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
         main {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             gap: 20px;
+            padding: 20px;
         }
 
         section {
             flex: 1;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li a {
+            color: #add8e6;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
         }
 
         .logo-container {
-           
-           
-            flex: 0 0 400px;
+            flex: 0 0 200px;
             text-align: center;
         }
 
         .logo-container img {
-           
             max-width: 100%;
             height: auto;
             border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -55,11 +126,16 @@
                 <li><a href="lots.html">All Parking Lots</a></li>
                 <li><a href="spaces.html?lot=Foy%20Lot">Spaces for Foy Lot</a></li>
                 <li><a href="404.html">Parking Rules</a></li>
+                
                 <li><a href="404.html">Lost and Found</a></li>
+                
                 <li><a href="404.html">Support and FAQ</a></li>
                 <li><a href="404.html">Report an Issue</a></li>
+                
                 <li><a href="404.html">Emergency Contacts</a></li>
             </ul>
+     
+     
         </section>
         <div class="logo-container">
             <img src="marist.jpg" alt="Marist Logo">
@@ -67,6 +143,21 @@
     </main>
     <footer>
         <p>&copy; 2024 Parking Lot App | Designed by Kyle Garrison</p>
+    
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

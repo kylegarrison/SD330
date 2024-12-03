@@ -1,18 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    
-    
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parking Spaces</title>
     <link rel="stylesheet" href="parking.css">
+    
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bgspaces.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            
+            color: #fff;
+        }
+
+       
+        header {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+       
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        
+        
+        nav ul li {
+           
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        
+        #spaces-info {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #spaces-list {
+            list-style: none;
+            padding: 0;
+        }
+
+       
+        #spaces-list li {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+       
+       
+        }
+    </style>
 </head>
+
 <body>
     <header>
-       
         <h1>Parking Spaces</h1>
     </header>
     <nav>
@@ -21,42 +112,38 @@
             <li><a href="lots.html">View All Parking Lots</a></li>
             
             <li><a href="spaces.html?lot=Foy%20Lot">View Spaces for Foy Lot</a></li>
-           
             <li><a href="404.html">Contact Us</a></li>
         </ul>
     </nav>
+    
     <main>
         <section id="spaces-info">
             <h2 id="lot-name">Loading...</h2>
             <ul id="spaces-list">
-              
-
+                
 
             </ul>
+        
         </section>
     </main>
     <footer>
+       
         <p>&copy; 2024 Parking Lot App | Designed by Kyle Garrison</p>
     </footer>
-    <script>
-        
-
-
-
+   
+   <script>
         const parkingData = {
             "parkingLots": [
                 {
-                    
-                    
-                    
-                    
                     "name": "Foy Lot",
                     "spaces": [
                         { "spaceId": 1, "type": "Student", "status": "Available" },
+                       
                         { "spaceId": 2, "type": "Faculty/Staff", "status": "Reserved" },
                         { "spaceId": 3, "type": "Handicap", "status": "Available" },
                         { "spaceId": 4, "type": "Student", "status": "Filled" },
                         { "spaceId": 5, "type": "Student", "status": "Available" },
+                       
                         { "spaceId": 6, "type": "Faculty/Staff", "status": "Filled" },
                         { "spaceId": 7, "type": "Student", "status": "Reserved" },
                         { "spaceId": 8, "type": "Handicap", "status": "Filled" },
@@ -64,34 +151,29 @@
                         { "spaceId": 10, "type": "Student", "status": "Filled" },
                         { "spaceId": 11, "type": "Faculty/Staff", "status": "Available" },
                         { "spaceId": 12, "type": "Student", "status": "Available" }
-                    
-                    
                     ]
                 }
+
             ]
         };
 
-        
+
+
+
         function getURLParameter(name) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(name);
-       
-       
-       
         }
 
-        
         const lotName = getURLParameter('lot');
+        
         const lotTitle = document.getElementById('lot-name');
-        
-        
         const spacesList = document.getElementById('spaces-list');
 
-        
         const lot = parkingData.parkingLots.find(l => l.name === lotName);
+        
+        
         if (lot) {
-            
-            
             lotTitle.textContent = `Spaces for ${lot.name}`;
             lot.spaces.forEach(space => {
                 const listItem = document.createElement('li');
@@ -103,27 +185,22 @@
                 spacesList.appendChild(listItem);
             });
         } else {
+            
+            
+            
+            
             lotTitle.textContent = 'Parking Lot Not Found';
-       
-       
-       
-       
         }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     </script>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
