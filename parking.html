@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot App</title>
+    <link rel="stylesheet" href="parking.css">
+    <style>
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        section {
+            flex: 1;
+        }
+
+        .logo-container {
+           
+           
+            flex: 0 0 400px;
+            text-align: center;
+        }
+
+        .logo-container img {
+           
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marist Parking App</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="parking.html">Home</a></li>
+            <li><a href="lots.html">View All Parking Lots</a></li>
+            <li><a href="spaces.html?lot=Foy%20Lot">View Spaces for Foy Lot</a></li>
+            <li><a href="404.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>About the App</h2>
+            <p>Use this app to find detailed information about parking lots and spaces. Choose from student, faculty, handicap, and general spaces. Plan your parking in advance to save time and avoid inconvenience.</p>
+        </section>
+        <section>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="lots.html">All Parking Lots</a></li>
+                <li><a href="spaces.html?lot=Foy%20Lot">Spaces for Foy Lot</a></li>
+                <li><a href="404.html">Parking Rules</a></li>
+                <li><a href="404.html">Lost and Found</a></li>
+                <li><a href="404.html">Support and FAQ</a></li>
+                <li><a href="404.html">Report an Issue</a></li>
+                <li><a href="404.html">Emergency Contacts</a></li>
+            </ul>
+        </section>
+        <div class="logo-container">
+            <img src="marist.jpg" alt="Marist Logo">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Parking Lot App | Designed by Kyle Garrison</p>
+    </footer>
+</body>
+</html>
